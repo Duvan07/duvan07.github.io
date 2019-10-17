@@ -25,6 +25,6 @@
         <script src="Librerias/jquery.js" type="text/javascript"></script>
         <script src="Librerias/bootstrap.min.js" type="text/javascript"></script>
         <script src="Librerias/sweetalert.min.js" type="text/javascript"></script>
-        <script src="JS/login.js" type="text/javascript"></script>
+       
     </body>
 </html>
