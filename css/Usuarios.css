@@ -1,0 +1,200 @@
+.icono{
+    width: 30px;
+}
+
+@media screen and (min-width: 780px) and (max-width: 2024px){
+
+    .GestorPrincipalMenu{
+        font-family: "Century Gothic";
+        display: flex; 
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .p1{
+        display: flex;
+        flex-direction: row;
+        height: 45%;
+        width: 100%;
+        align-items:  center;
+        padding: 10px;
+    }
+    .personausuario{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 50%;
+        padding-right: 3px;
+    }
+
+    .usuariousuario{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 50%;
+        padding-left: 3px;
+    }
+    .p2{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        width: 100%;
+        height: 40%;
+    }
+
+    .pbotones{
+        display: flex;
+        flex-direction: row;
+        height: 10%;
+        width: 100%;
+        padding: 10px;
+        justify-content:center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 780px){
+    .GestorPrincipalMenu{
+        font-family: "Century Gothic";
+        margin-top: 60px;
+        display: flex; 
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        justify-content: flex-start;
+        background-image: url("../image/Fondo.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .p1{
+        display: flex;
+        flex-direction: row;
+        height: 45%;
+        width: 100%;
+        padding: 10px;
+    }
+    .personausuario{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 50%;
+        padding-right: 3px;
+    }
+
+    .usuariousuario{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 50%;
+        padding-left: 3px;
+    }
+    .p2{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        width: 100%;
+        height: 40%;
+    }
+    .pbotones{
+        display: flex;
+        flex-direction: row;
+        height: 10%;
+        width: 100%;
+        padding: 10px;
+        justify-content:center;
+        align-items: center;
+    }
+    .tCorreo{
+        display:none;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .GestorPrincipalMenu{
+        font-family: "Century Gothic";
+        display: flex; 
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        justify-content: flex-start;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .p1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+        border-style: solid;
+        border-width:1px 1px 1px 1px;
+        border-color: #b9bbbe;
+    }
+    .personausuario{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        padding-right: 3px;
+        border-style: solid;
+        border-width:0px 0px 0px 0px;
+        border-color: #b9bbbe;
+    }
+
+    .usuariousuario{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        padding-left: 3px;
+    }
+    .p2{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+    }
+    .pbotones{
+        display: flex;
+        flex-direction: row;
+        height: 10%;
+        width: 100%;
+        padding: 10px;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .tCorreo{
+        display:none;
+    }
+    .tCedula{
+        display:none;
+    }
+    .tRol{
+        display:none;
+    }
+    .btntabla{
+        width: 110px;
+        margin-top: 5px; 
+    }
+
+    .menuusu{
+        margin-top: 40px;
+    }
+}
