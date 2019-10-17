@@ -1,30 +1,463 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Login</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="Librerias/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <link href="css/login.css" rel="stylesheet" type="text/css"/>
-        <link href="Librerias/sweetalert.css" rel="stylesheet" type="text/css"/>
-    </head>
-    <body >
-        <form class="grander">
-            <div class="login grande">
-                <div class="logoizq imagen">
-                    <img class="" alt="" />
-                </div>
-                <div class="derecha" id="input">
-                    <img style="" class="imagen2" alt="" />
-                    <input type="text" name="usaurio" id="usuario" class="inputlogin" placeholder="Usuario">
-                    <input type="password" name="contrasena" id="contrasena" class="inputlogin" placeholder="Contrasena">
-                    <div><button id="entrar" type="button" onclick="Login()">Entrar</button> </div>
-                </div>
-            </div>
-        </form>
-        <script src="Librerias/jquery.js" type="text/javascript"></script>
-        <script src="Librerias/bootstrap.min.js" type="text/javascript"></script>
-        <script src="Librerias/sweetalert.min.js" type="text/javascript"></script>
-        <script src="JS/login.js" type="text/javascript"></script>
-    </body>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="">
+
+<head>
+	<title>GitPages</title>
+    <link href="css/Diseño.css" rel="stylesheet" type="text/css"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<br />
+	<style type="text/css">
+		<!--
+		p {
+			margin: 0;
+			padding: 0;
+		}
+
+		.ft10 {
+			font-size: 23px;
+			font-family: Times;
+			color: #000000;
+		}
+
+		.ft11 {
+			font-size: 15px;
+			font-family: Times;
+			color: #000000;
+		}
+
+		.ft12 {
+			font-size: 19px;
+			font-family: Times;
+			color: #000000;
+		}
+
+		.ft13 {
+			font-size: 12px;
+			font-family: Times;
+			color: #000000;
+		}
+		-->
+	</style>
+</head>
+
+<body bgcolor="#FFFFFF" vlink="blue" link="blue">
+	<div class="Centrar">
+
+		<div id="page1-div" style="position:relative;width:918px;height:1188px;">
+			<p style="position:absolute;top:264px;left:243px;white-space:nowrap" class="ft10">
+				Inteligencia&#160;Artificial&#160;-&#160;Redes&#160;Neuronales</p>
+			<p style="position:absolute;top:323px;left:236px;white-space:nowrap" class="ft11">
+				Jesús&#160;Andrés&#160;González&#160;Alarcón&#160;-&#160;jesusandres548@gmail.com</p>
+			<p style="position:absolute;top:354px;left:237px;white-space:nowrap" class="ft11">
+				Duban&#160;Andrés&#160;Monsalve&#160;Suarez&#160;-&#160;damonsalve60@gmail.com</p>
+			<p style="position:absolute;top:386px;left:270px;white-space:nowrap" class="ft11">
+				Jhoneider&#160;Hincapie&#160;Aguirre&#160;-&#160;hincajhon@gmail.com</p>
+			<p style="position:absolute;top:424px;left:397px;white-space:nowrap" class="ft11">Septiembre&#160;2019</p>
+			<p style="position:absolute;top:495px;left:201px;white-space:nowrap" class="ft12">´Indice</p>
+			<p style="position:absolute;top:547px;left:201px;white-space:nowrap" class="ft13">1.&#160;Resumen</p>
+			<p style="position:absolute;top:547px;left:709px;white-space:nowrap" class="ft13">2</p>
+			<p style="position:absolute;top:589px;left:201px;white-space:nowrap" class="ft13">
+				2.&#160;Palabras&#160;claves</p>
+			<p style="position:absolute;top:589px;left:709px;white-space:nowrap" class="ft13">2</p>
+			<p style="position:absolute;top:631px;left:201px;white-space:nowrap" class="ft13">3.&#160;Introducción</p>
+			<p style="position:absolute;top:631px;left:709px;white-space:nowrap" class="ft13">2</p>
+			<p style="position:absolute;top:672px;left:201px;white-space:nowrap" class="ft13">
+				4.&#160;Algoritmos&#160;usados</p>
+			<p style="position:absolute;top:672px;left:709px;white-space:nowrap" class="ft13">2</p>
+			<p style="position:absolute;top:714px;left:201px;white-space:nowrap" class="ft13">
+				5.&#160;Lenguaje&#160;de&#160;programación&#160;usado</p>
+			<p style="position:absolute;top:714px;left:709px;white-space:nowrap" class="ft13">3</p>
+			<p style="position:absolute;top:756px;left:201px;white-space:nowrap" class="ft13">
+				6.&#160;Comparaci´on&#160;de&#160;datos</p>
+			<p style="position:absolute;top:756px;left:709px;white-space:nowrap" class="ft13">3</p>
+			<p style="position:absolute;top:798px;left:201px;white-space:nowrap" class="ft13">
+				7.&#160;Caracteristicas&#160;de&#160;los&#160;computadores&#160;usados</p>
+			<p style="position:absolute;top:798px;left:709px;white-space:nowrap" class="ft13">4</p>
+			<p style="position:absolute;top:825px;left:223px;white-space:nowrap" class="ft13">
+				7.1.&#160;John&#160;Eider&#160;Hincapie:&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.
+			</p>
+			<p style="position:absolute;top:825px;left:709px;white-space:nowrap" class="ft13">4</p>
+			<p style="position:absolute;top:852px;left:223px;white-space:nowrap" class="ft13">
+				7.2.&#160;Jesus&#160;Andres&#160;Gonzalez:&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.
+			</p>
+			<p style="position:absolute;top:852px;left:709px;white-space:nowrap" class="ft13">4</p>
+			<p style="position:absolute;top:879px;left:223px;white-space:nowrap" class="ft13">
+				7.3.&#160;Duban&#160;Andres&#160;Monsalve:&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.&#160;.
+			</p>
+			<p style="position:absolute;top:879px;left:709px;white-space:nowrap" class="ft13">4</p>
+			<p style="position:absolute;top:920px;left:201px;white-space:nowrap" class="ft13">
+				8.&#160;Referencias&#160;bibliograficas</p>
+			<p style="position:absolute;top:920px;left:709px;white-space:nowrap" class="ft13">4</p>
+			<p style="position:absolute;top:1044px;left:455px;white-space:nowrap" class="ft13">1</p>
+		</div>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+	<title></title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<br />
+	<style type="text/css">
+		<!--
+		p {
+			margin: 0;
+			padding: 0;
+		}
+
+		.ft20 {
+			font-size: 19px;
+			font-family: Times;
+			color: #000000;
+		}
+
+		.ft21 {
+			font-size: 12px;
+			font-family: Times;
+			color: #000000;
+		}
+		-->
+	</style>
+</head>
+
+<body bgcolor="#FFFFFF" vlink="blue" link="blue">
+	<div id="page2-div" style="position:relative;width:918px;height:1188px;">
+		<p style="position:absolute;top:187px;left:201px;white-space:nowrap" class="ft20">1.</p>
+		<p style="position:absolute;top:187px;left:238px;white-space:nowrap" class="ft20">Resumen</p>
+		<p style="position:absolute;top:353px;left:223px;white-space:nowrap" class="ft21">
+			En&#160;este&#160;documento&#160;se&#160;mostrar´a&#160;que&#160;es</p>
+		<p style="position:absolute;top:380px;left:201px;white-space:nowrap" class="ft21">
+			y&#160;c´omo&#160;funciona&#160;la&#160;neuronal&#160;perceptron&#160;la</p>
+		<p style="position:absolute;top:407px;left:201px;white-space:nowrap" class="ft21">
+			cual&#160;es&#160;la&#160;neurona&#160;m´as&#160;sencilla&#160;que&#160;exis-</p>
+		<p style="position:absolute;top:434px;left:201px;white-space:nowrap" class="ft21">
+			te&#160;en&#160;la&#160;IA,&#160;la&#160;cual&#160;consta&#160;de&#160;1&#160;neurona</p>
+		<p style="position:absolute;top:461px;left:201px;white-space:nowrap" class="ft21">
+			que&#160;separa&#160;la&#160;informaci´on&#160;en&#160;dos&#160;partes</p>
+		<p style="position:absolute;top:488px;left:201px;white-space:nowrap" class="ft21">
+			para&#160;poder&#160;clasificar&#160;sus&#160;2&#160;caracter´ısticas.</p>
+		<p style="position:absolute;top:515px;left:201px;white-space:nowrap" class="ft21">
+			Mostrar´a&#160;igualmente&#160;la&#160;red&#160;neuronal&#160;sim-</p>
+		<p style="position:absolute;top:542px;left:201px;white-space:nowrap" class="ft21">
+			ple&#160;que&#160;es&#160;la&#160;red&#160;neuronal&#160;que&#160;tiene&#160;1&#160;capa</p>
+		<p style="position:absolute;top:569px;left:201px;white-space:nowrap" class="ft21">
+			neuronal,&#160;y&#160;su&#160;contraejemplo&#160;la&#160;red&#160;neu-</p>
+		<p style="position:absolute;top:596px;left:201px;white-space:nowrap" class="ft21">
+			ronal&#160;multicapa&#160;que&#160;bien&#160;lo&#160;indica,&#160;tiene</p>
+		<p style="position:absolute;top:622px;left:201px;white-space:nowrap" class="ft21">
+			m´as&#160;de&#160;1&#160;capa&#160;de&#160;neurona&#160;la&#160;cual&#160;posee&#160;un</p>
+		<p style="position:absolute;top:649px;left:201px;white-space:nowrap" class="ft21">
+			mayor&#160;acierto&#160;en&#160;el&#160;aprendizaje.</p>
+		<p style="position:absolute;top:703px;left:201px;white-space:nowrap" class="ft21">summary</p>
+		<p style="position:absolute;top:730px;left:201px;white-space:nowrap" class="ft21">
+			This&#160;document&#160;will&#160;show&#160;what&#160;the&#160;percep-</p>
+		<p style="position:absolute;top:757px;left:201px;white-space:nowrap" class="ft21">
+			tron&#160;neuronal&#160;is&#160;and&#160;how&#160;it&#160;is&#160;the&#160;simplest</p>
+		<p style="position:absolute;top:784px;left:201px;white-space:nowrap" class="ft21">
+			neuron&#160;that&#160;exists&#160;in&#160;AI,&#160;which&#160;consists</p>
+		<p style="position:absolute;top:811px;left:201px;white-space:nowrap" class="ft21">
+			of&#160;1&#160;neuron&#160;that&#160;separates&#160;the&#160;information</p>
+		<p style="position:absolute;top:838px;left:201px;white-space:nowrap" class="ft21">
+			into&#160;two&#160;parts&#160;to&#160;classify&#160;its&#160;2&#160;characte-</p>
+		<p style="position:absolute;top:864px;left:201px;white-space:nowrap" class="ft21">
+			ristics.&#160;It&#160;will&#160;also&#160;show&#160;the&#160;simple&#160;neural</p>
+		<p style="position:absolute;top:891px;left:201px;white-space:nowrap" class="ft21">
+			network&#160;that&#160;is&#160;the&#160;neural&#160;network&#160;that&#160;has</p>
+		<p style="position:absolute;top:918px;left:201px;white-space:nowrap" class="ft21">
+			1&#160;neuronal&#160;layer,&#160;and&#160;its&#160;counter-example</p>
+		<p style="position:absolute;top:945px;left:201px;white-space:nowrap" class="ft21">
+			the&#160;multilayer&#160;neural&#160;network&#160;that&#160;indica-</p>
+		<p style="position:absolute;top:972px;left:201px;white-space:nowrap" class="ft21">
+			tes&#160;it&#160;well,&#160;has&#160;more&#160;than&#160;1&#160;layer&#160;of&#160;neuron</p>
+		<p style="position:absolute;top:999px;left:201px;white-space:nowrap" class="ft21">
+			which&#160;has&#160;a&#160;greater&#160;learning&#160;success.</p>
+		<p style="position:absolute;top:187px;left:466px;white-space:nowrap" class="ft20">2.</p>
+		<p style="position:absolute;top:187px;left:504px;white-space:nowrap" class="ft20">Palabras&#160;claves</p>
+		<p style="position:absolute;top:236px;left:488px;white-space:nowrap" class="ft21">
+			Palabras&#160;claves:&#160;Perceptron,&#160;Ejemplo</p>
+		<p style="position:absolute;top:263px;left:466px;white-space:nowrap" class="ft21">
+			del&#160;perceptron,&#160;comparaci´on&#160;de&#160;neuronas,</p>
+		<p style="position:absolute;top:290px;left:466px;white-space:nowrap" class="ft21">
+			Neurona,&#160;Red&#160;neuronal&#160;simple,&#160;Red&#160;neu-</p>
+		<p style="position:absolute;top:317px;left:466px;white-space:nowrap" class="ft21">ronal&#160;multiple</p>
+		<p style="position:absolute;top:370px;left:466px;white-space:nowrap" class="ft21">
+			Keywords:&#160;Perceptron,&#160;Perceptron&#160;Exam-</p>
+		<p style="position:absolute;top:397px;left:466px;white-space:nowrap" class="ft21">
+			ple,&#160;Comparison&#160;of&#160;Neurons,&#160;Neuron,</p>
+		<p style="position:absolute;top:424px;left:466px;white-space:nowrap" class="ft21">
+			Simple&#160;Neural&#160;Network,&#160;Multiple&#160;Neu-</p>
+		<p style="position:absolute;top:451px;left:466px;white-space:nowrap" class="ft21">ral&#160;Network</p>
+		<p style="position:absolute;top:515px;left:466px;white-space:nowrap" class="ft20">3.</p>
+		<p style="position:absolute;top:515px;left:504px;white-space:nowrap" class="ft20">Introducci´on</p>
+		<p style="position:absolute;top:564px;left:488px;white-space:nowrap" class="ft21">
+			Teniendo&#160;en&#160;base&#160;las&#160;clases&#160;de&#160;Inteli-</p>
+		<p style="position:absolute;top:591px;left:466px;white-space:nowrap" class="ft21">
+			gencia&#160;Artificial&#160;y&#160;comprendiendo&#160;los&#160;al-</p>
+		<p style="position:absolute;top:617px;left:466px;white-space:nowrap" class="ft21">
+			goritmos&#160;vistos&#160;en&#160;clase,&#160;en&#160;el&#160;presente</p>
+		<p style="position:absolute;top:644px;left:466px;white-space:nowrap" class="ft21">
+			documento&#160;se&#160;dar´a&#160;una&#160;breve&#160;explicaci´on</p>
+		<p style="position:absolute;top:671px;left:466px;white-space:nowrap" class="ft21">
+			de&#160;la&#160;neurona&#160;perceptron,&#160;la&#160;red&#160;neuronal</p>
+		<p style="position:absolute;top:698px;left:466px;white-space:nowrap" class="ft21">
+			simple&#160;y&#160;la&#160;red&#160;neuronal&#160;multiple,&#160;igual-</p>
+		<p style="position:absolute;top:725px;left:466px;white-space:nowrap" class="ft21">
+			mente&#160;cuenta&#160;con&#160;unos&#160;ejemplos&#160;compara-</p>
+		<p style="position:absolute;top:752px;left:466px;white-space:nowrap" class="ft21">
+			tivos&#160;y&#160;resultados&#160;de&#160;las&#160;neuronas&#160;anterior-</p>
+		<p style="position:absolute;top:779px;left:466px;white-space:nowrap" class="ft21">
+			mente&#160;mencionadas,&#160;realizadas&#160;en&#160;el&#160;len-</p>
+		<p style="position:absolute;top:806px;left:466px;white-space:nowrap" class="ft21">guaje&#160;python3.</p>
+		<p style="position:absolute;top:870px;left:466px;white-space:nowrap" class="ft20">4.</p>
+		<p style="position:absolute;top:870px;left:504px;white-space:nowrap" class="ft20">Algoritmos&#160;usados</p>
+		<p style="position:absolute;top:918px;left:488px;white-space:nowrap" class="ft21">
+			los&#160;algoritmos&#160;usados&#160;fueron:</p>
+		<p style="position:absolute;top:945px;left:466px;white-space:nowrap" class="ft21">
+			Algoritmo&#160;del&#160;Perceptron:&#160;Consiste&#160;en</p>
+		<p style="position:absolute;top:972px;left:466px;white-space:nowrap" class="ft21">
+			un&#160;algoritmo&#160;de&#160;Inteligencia&#160;Artificial&#160;el</p>
+		<p style="position:absolute;top:999px;left:466px;white-space:nowrap" class="ft21">
+			cual&#160;tiene&#160;por&#160;objetivo&#160;generar&#160;2&#160;sub-</p>
+		<p style="position:absolute;top:1044px;left:455px;white-space:nowrap" class="ft21">2</p>
+	</div>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+	<title></title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<br />
+	<style type="text/css">
+		<!--
+		p {
+			margin: 0;
+			padding: 0;
+		}
+
+		.ft30 {
+			font-size: 12px;
+			font-family: Times;
+			color: #000000;
+		}
+
+		.ft31 {
+			font-size: 19px;
+			font-family: Times;
+			color: #000000;
+		}
+		-->
+	</style>
+</head>
+
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+	<div id="page3-div" style="position:relative;width:918px;height:1188px;">
+		<p style="position:absolute;top:192px;left:201px;white-space:nowrap" class="ft30">
+			grupos&#160;a&#160;partir&#160;de&#160;un&#160;grupo&#160;de&#160;componen-</p>
+		<p style="position:absolute;top:219px;left:201px;white-space:nowrap" class="ft30">tes&#160;mas&#160;grande.</p>
+		<p style="position:absolute;top:247px;left:223px;white-space:nowrap" class="ft30">
+			Algoritmo&#160;de&#160;la&#160;neurona&#160;simple:&#160;Es-</p>
+		<p style="position:absolute;top:274px;left:201px;white-space:nowrap" class="ft30">
+			ta&#160;red&#160;neuronal&#160;funciona&#160;con&#160;1&#160;sola&#160;neuro-</p>
+		<p style="position:absolute;top:301px;left:201px;white-space:nowrap" class="ft30">na&#160;perceptron.</p>
+		<p style="position:absolute;top:329px;left:223px;white-space:nowrap" class="ft30">
+			Algoritmo&#160;de&#160;la&#160;neurona&#160;mutica-</p>
+		<p style="position:absolute;top:356px;left:201px;white-space:nowrap" class="ft30">
+			pa:Esta&#160;red&#160;neuronal&#160;tiene&#160;como&#160;objetivo</p>
+		<p style="position:absolute;top:383px;left:201px;white-space:nowrap" class="ft30">
+			aprender&#160;a&#160;partir&#160;de&#160;unos&#160;valores&#160;iniciales</p>
+		<p style="position:absolute;top:410px;left:201px;white-space:nowrap" class="ft30">
+			y&#160;sus&#160;salidas&#160;esperadas&#160;ingresadas.&#160;como</p>
+		<p style="position:absolute;top:437px;left:201px;white-space:nowrap" class="ft30">
+			su&#160;nombre&#160;lo&#160;indica,&#160;esta&#160;red&#160;tiene&#160;mas&#160;de</p>
+		<p style="position:absolute;top:464px;left:201px;white-space:nowrap" class="ft30">
+			una&#160;neurona,&#160;la&#160;cual&#160;nos&#160;ayuda&#160;a&#160;ser&#160;mas</p>
+		<p style="position:absolute;top:491px;left:201px;white-space:nowrap" class="ft30">
+			precisos&#160;en&#160;los&#160;datos&#160;retornados&#160;por&#160;el&#160;al-</p>
+		<p style="position:absolute;top:518px;left:201px;white-space:nowrap" class="ft30">goritmo.</p>
+		<p style="position:absolute;top:546px;left:223px;white-space:nowrap" class="ft30">
+			Algoritmo&#160;de&#160;entrenamiento:El&#160;cual</p>
+		<p style="position:absolute;top:573px;left:201px;white-space:nowrap" class="ft30">
+			consiste&#160;en&#160;entrenar&#160;la&#160;red&#160;neuronal&#160;para</p>
+		<p style="position:absolute;top:600px;left:201px;white-space:nowrap" class="ft30">
+			ajustar&#160;sus&#160;pesos&#160;y&#160;sesgo&#160;de&#160;bahias&#160;para</p>
+		<p style="position:absolute;top:627px;left:201px;white-space:nowrap" class="ft30">
+			tener&#160;una&#160;salida&#160;esperada,&#160;esto&#160;depende&#160;de</p>
+		<p style="position:absolute;top:654px;left:201px;white-space:nowrap" class="ft30">
+			sus&#160;epocas,&#160;que&#160;indican&#160;cuantas&#160;veces&#160;va</p>
+		<p style="position:absolute;top:680px;left:201px;white-space:nowrap" class="ft30">
+			a&#160;ajustar&#160;estos&#160;valores,&#160;para&#160;asi&#160;tener&#160;un</p>
+		<p style="position:absolute;top:707px;left:201px;white-space:nowrap" class="ft30">
+			resultado&#160;mas&#160;preciso</p>
+		<p style="position:absolute;top:774px;left:201px;white-space:nowrap" class="ft31">5.</p>
+		<p style="position:absolute;top:774px;left:238px;white-space:nowrap" class="ft31">Lenguaje&#160;de&#160;progra-
+		</p>
+		<p style="position:absolute;top:815px;left:238px;white-space:nowrap" class="ft31">maci´on&#160;usado</p>
+		<p style="position:absolute;top:864px;left:223px;white-space:nowrap" class="ft30">
+			El&#160;lenguaje&#160;de&#160;programaci´on&#160;usado</p>
+		<p style="position:absolute;top:891px;left:201px;white-space:nowrap" class="ft30">
+			para&#160;este&#160;ejemplo&#160;es&#160;Python3&#160;el&#160;cual&#160;es</p>
+		<p style="position:absolute;top:918px;left:201px;white-space:nowrap" class="ft30">
+			un&#160;lenguaje&#160;interpretado,&#160;cuenta&#160;con&#160;una</p>
+		<p style="position:absolute;top:945px;left:201px;white-space:nowrap" class="ft30">
+			sintaxis&#160;favorable&#160;para&#160;que&#160;el&#160;codigo&#160;sea</p>
+		<p style="position:absolute;top:972px;left:201px;white-space:nowrap" class="ft30">
+			legible&#160;y&#160;facil&#160;de&#160;comprender.&#160;Se&#160;trata&#160;de</p>
+		<p style="position:absolute;top:999px;left:201px;white-space:nowrap" class="ft30">
+			un&#160;lenguaje&#160;de&#160;programaci´on&#160;multipara-</p>
+		<p style="position:absolute;top:192px;left:466px;white-space:nowrap" class="ft30">
+			digma,&#160;ya&#160;que&#160;soporta&#160;orientaci´on&#160;a&#160;ob-</p>
+		<p style="position:absolute;top:219px;left:466px;white-space:nowrap" class="ft30">
+			jetos,&#160;programaci´on&#160;imperativa&#160;y,&#160;en&#160;me-</p>
+		<p style="position:absolute;top:246px;left:466px;white-space:nowrap" class="ft30">
+			nor&#160;medida,&#160;programaci´on&#160;funcional.&#160;Es</p>
+		<p style="position:absolute;top:273px;left:466px;white-space:nowrap" class="ft30">
+			un&#160;lenguaje&#160;multiplataforma,&#160;ya&#160;que&#160;corre</p>
+		<p style="position:absolute;top:300px;left:466px;white-space:nowrap" class="ft30">
+			en&#160;cualquier&#160;sistema&#160;operativo</p>
+		<p style="position:absolute;top:446px;left:466px;white-space:nowrap" class="ft31">6.</p>
+		<p style="position:absolute;top:446px;left:504px;white-space:nowrap" class="ft31">
+			Comparaci´on&#160;de&#160;datos</p>
+		<p style="position:absolute;top:523px;left:488px;white-space:nowrap" class="ft30">
+			Tiempo&#160;de&#160;ejecucion&#160;(Pc&#160;John)</p>
+		<p style="position:absolute;top:547px;left:475px;white-space:nowrap" class="ft30">Epocas</p>
+		<p style="position:absolute;top:547px;left:541px;white-space:nowrap" class="ft30">Perceptron</p>
+		<p style="position:absolute;top:547px;left:624px;white-space:nowrap" class="ft30">R.&#160;Simple</p>
+		<p style="position:absolute;top:547px;left:702px;white-space:nowrap" class="ft30">R.&#160;Multiple</p>
+		<p style="position:absolute;top:575px;left:475px;white-space:nowrap" class="ft30">100</p>
+		<p style="position:absolute;top:575px;left:553px;white-space:nowrap" class="ft30">0,0000</p>
+		<p style="position:absolute;top:575px;left:676px;white-space:nowrap" class="ft30">6</p>
+		<p style="position:absolute;top:602px;left:475px;white-space:nowrap" class="ft30">1.000</p>
+		<p style="position:absolute;top:602px;left:549px;white-space:nowrap" class="ft30">0,01560</p>
+		<p style="position:absolute;top:602px;left:676px;white-space:nowrap" class="ft30">9</p>
+		<p style="position:absolute;top:630px;left:475px;white-space:nowrap" class="ft30">10.000</p>
+		<p style="position:absolute;top:630px;left:553px;white-space:nowrap" class="ft30">0,1315</p>
+		<p style="position:absolute;top:630px;left:676px;white-space:nowrap" class="ft30">9</p>
+		<p style="position:absolute;top:657px;left:475px;white-space:nowrap" class="ft30">100.000</p>
+		<p style="position:absolute;top:657px;left:553px;white-space:nowrap" class="ft30">1,1517</p>
+		<p style="position:absolute;top:657px;left:676px;white-space:nowrap" class="ft30">9</p>
+		<p style="position:absolute;top:693px;left:488px;white-space:nowrap" class="ft30">
+			Tiempo&#160;de&#160;ejecucion&#160;(Pc&#160;Jesus)</p>
+		<p style="position:absolute;top:717px;left:475px;white-space:nowrap" class="ft30">Epocas</p>
+		<p style="position:absolute;top:718px;left:541px;white-space:nowrap" class="ft30">Perceptron</p>
+		<p style="position:absolute;top:718px;left:624px;white-space:nowrap" class="ft30">R.&#160;Simple</p>
+		<p style="position:absolute;top:718px;left:702px;white-space:nowrap" class="ft30">R.&#160;Multiple</p>
+		<p style="position:absolute;top:745px;left:475px;white-space:nowrap" class="ft30">100</p>
+		<p style="position:absolute;top:745px;left:553px;white-space:nowrap" class="ft30">0.0074</p>
+		<p style="position:absolute;top:745px;left:643px;white-space:nowrap" class="ft30">0.0039</p>
+		<p style="position:absolute;top:773px;left:475px;white-space:nowrap" class="ft30">1.000</p>
+		<p style="position:absolute;top:773px;left:553px;white-space:nowrap" class="ft30">0.0257</p>
+		<p style="position:absolute;top:773px;left:643px;white-space:nowrap" class="ft30">0.0397</p>
+		<p style="position:absolute;top:800px;left:475px;white-space:nowrap" class="ft30">10.000</p>
+		<p style="position:absolute;top:800px;left:553px;white-space:nowrap" class="ft30">0.1321</p>
+		<p style="position:absolute;top:800px;left:643px;white-space:nowrap" class="ft30">0.3981</p>
+		<p style="position:absolute;top:828px;left:475px;white-space:nowrap" class="ft30">100.000</p>
+		<p style="position:absolute;top:828px;left:553px;white-space:nowrap" class="ft30">0.7766</p>
+		<p style="position:absolute;top:828px;left:635px;white-space:nowrap" class="ft30">82.7373</p>
+		<p style="position:absolute;top:864px;left:488px;white-space:nowrap" class="ft30">
+			Tiempo&#160;de&#160;ejecucion&#160;(Pc&#160;Duban)</p>
+		<p style="position:absolute;top:888px;left:475px;white-space:nowrap" class="ft30">Epocas</p>
+		<p style="position:absolute;top:888px;left:538px;white-space:nowrap" class="ft30">Perceptron</p>
+		<p style="position:absolute;top:888px;left:621px;white-space:nowrap" class="ft30">R.&#160;Simple</p>
+		<p style="position:absolute;top:888px;left:699px;white-space:nowrap" class="ft30">R.&#160;Multiple</p>
+		<p style="position:absolute;top:915px;left:475px;white-space:nowrap" class="ft30">100</p>
+		<p style="position:absolute;top:915px;left:547px;white-space:nowrap" class="ft30">0.00000</p>
+		<p style="position:absolute;top:915px;left:673px;white-space:nowrap" class="ft30">6</p>
+		<p style="position:absolute;top:943px;left:475px;white-space:nowrap" class="ft30">1000</p>
+		<p style="position:absolute;top:943px;left:567px;white-space:nowrap" class="ft30">8</p>
+		<p style="position:absolute;top:943px;left:673px;white-space:nowrap" class="ft30">9</p>
+		<p style="position:absolute;top:970px;left:475px;white-space:nowrap" class="ft30">10000</p>
+		<p style="position:absolute;top:970px;left:567px;white-space:nowrap" class="ft30">8</p>
+		<p style="position:absolute;top:970px;left:673px;white-space:nowrap" class="ft30">9</p>
+		<p style="position:absolute;top:998px;left:475px;white-space:nowrap" class="ft30">100000</p>
+		<p style="position:absolute;top:998px;left:567px;white-space:nowrap" class="ft30">8</p>
+		<p style="position:absolute;top:998px;left:673px;white-space:nowrap" class="ft30">9</p>
+		<p style="position:absolute;top:1044px;left:455px;white-space:nowrap" class="ft30">3</p>
+	</div>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+	<title></title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<br />
+	<style type="text/css">
+		<!--
+		p {
+			margin: 0;
+			padding: 0;
+		}
+
+		.ft40 {
+			font-size: 19px;
+			font-family: Times;
+			color: #000000;
+		}
+
+		.ft41 {
+			font-size: 15px;
+			font-family: Times;
+			color: #000000;
+		}
+
+		.ft42 {
+			font-size: 12px;
+			font-family: Times;
+			color: #000000;
+		}
+		-->
+	</style>
+</head>
+
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+	<div id="page4-div" style="position:relative;width:918px;height:1188px;">
+		<p style="position:absolute;top:187px;left:201px;white-space:nowrap" class="ft40">7.</p>
+		<p style="position:absolute;top:187px;left:238px;white-space:nowrap" class="ft40">
+			Caracteristicas&#160;de&#160;los</p>
+		<p style="position:absolute;top:228px;left:238px;white-space:nowrap" class="ft40">computadores&#160;usados</p>
+		<p style="position:absolute;top:277px;left:201px;white-space:nowrap" class="ft41">7.1.</p>
+		<p style="position:absolute;top:277px;left:245px;white-space:nowrap" class="ft41">John&#160;Eider&#160;Hincapie:
+		</p>
+		<p style="position:absolute;top:316px;left:223px;white-space:nowrap" class="ft42">
+			marca:&#160;Dell&#160;Inspirion</p>
+		<p style="position:absolute;top:343px;left:201px;white-space:nowrap" class="ft42">
+			CPU:Intel&#160;i5-2410M&#160;2.30GHz</p>
+		<p style="position:absolute;top:370px;left:201px;white-space:nowrap" class="ft42">RAM:&#160;6GB</p>
+		<p style="position:absolute;top:397px;left:201px;white-space:nowrap" class="ft42">DD:&#160;1TB</p>
+		<p style="position:absolute;top:447px;left:201px;white-space:nowrap" class="ft41">7.2.</p>
+		<p style="position:absolute;top:447px;left:245px;white-space:nowrap" class="ft41">
+			Jesus&#160;Andres&#160;Gonzalez:</p>
+		<p style="position:absolute;top:487px;left:223px;white-space:nowrap" class="ft42">marca:&#160;DELL&#160;G3</p>
+		<p style="position:absolute;top:513px;left:201px;white-space:nowrap" class="ft42">
+			CPU:&#160;Intel&#160;i7-8750H&#160;2.20GHz</p>
+		<p style="position:absolute;top:192px;left:466px;white-space:nowrap" class="ft42">RAM:&#160;8GB</p>
+		<p style="position:absolute;top:219px;left:466px;white-space:nowrap" class="ft42">DD:&#160;250GB&#160;SDD</p>
+		<p style="position:absolute;top:278px;left:466px;white-space:nowrap" class="ft41">7.3.</p>
+		<p style="position:absolute;top:278px;left:511px;white-space:nowrap" class="ft41">
+			Duban&#160;Andres&#160;Monsalve:</p>
+		<p style="position:absolute;top:320px;left:488px;white-space:nowrap" class="ft42">marca:&#160;DELL&#160;G7</p>
+		<p style="position:absolute;top:347px;left:466px;white-space:nowrap" class="ft42">
+			CPU:&#160;Intel&#160;i7-8750H&#160;2.20GHz</p>
+		<p style="position:absolute;top:374px;left:466px;white-space:nowrap" class="ft42">RAM:&#160;8GB</p>
+		<p style="position:absolute;top:401px;left:466px;white-space:nowrap" class="ft42">DD:&#160;150GB&#160;SDD</p>
+		<p style="position:absolute;top:468px;left:466px;white-space:nowrap" class="ft40">8.</p>
+		<p style="position:absolute;top:468px;left:504px;white-space:nowrap" class="ft40">Referencias&#160;bibliogra-
+		</p>
+		<p style="position:absolute;top:509px;left:504px;white-space:nowrap" class="ft40">ficas</p>
+		<p style="position:absolute;top:1044px;left:455px;white-space:nowrap" class="ft42">4</p>
+	</div>
+
+	</div>
+</body>
+
 </html>
